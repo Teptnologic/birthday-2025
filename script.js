@@ -14,23 +14,4 @@ document.addEventListener('DOMContentLoaded', () => {
             instructions.textContent = 'Click on the envelope to open';
         }
     });
-    
-    // Add some initial animation to draw attention
-    setTimeout(() => {
-        envelope.style.animation = 'shake 0.5s';
-        envelope.style.animationIterationCount = '3';
-    }, 1000);
 });
-
-// Add shake animation
-document.head.insertAdjacentHTML('beforeend', `
-<style>
-    @keyframes shake {
-        0% { transform: translateX(0); }
-        25% { transform: translateX(-5px); }
-        50% { transform: translateX(0); }
-        75% { transform: translateX(5px); }
-        100% { transform: translateX(0); }
-    }
-</style>
-`);
