@@ -72,16 +72,12 @@ body {
     background-color: #fff;
     top: 10px;
     left: 10px;
-    transform-origin: center top;
+    transform-origin: center;
     transform: translateZ(-1px) rotateX(0deg);
     transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
     transform-style: preserve-3d;
-    z-index: 2;
+    z-index: 10;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.envelope.open .card {
-    transform: translateZ(100px) rotateX(180deg);
 }
 
 .card-front, .card-inside {
@@ -110,8 +106,7 @@ body {
 }
 
 .envelope.open .card {
-    transform: translateZ(450px) translateY(-50px) rotateX(0deg) rotateY(180deg);
-    z-index: 4;
+    transform: translateZ(200px) translateY(-50px) rotateX(0deg) rotateY(180deg);
 }
 
 h1 {
@@ -209,8 +204,8 @@ p {
     }
     
     .card {
-        width: 240px;
-        height: 240px;
+        width: 280px;
+        height: 225px;
     }
     
     h1 {
