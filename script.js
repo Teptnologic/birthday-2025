@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Update instructions text based on envelope state
         if (envelope.classList.contains('open')) {
-            instructions.textContent = 'Click again to close';
+            instructions.textContent = '🐱：好了可以了。关上！';
         } else {
-            instructions.textContent = 'Click on the envelope to open';
+            instructions.textContent = '🐱：点开看看！啊！';
         }
     });
 });
